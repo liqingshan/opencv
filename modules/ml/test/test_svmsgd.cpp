@@ -189,6 +189,7 @@ void CV_SVMSGDTrainTest::run( int /*start_from*/ )
 
 void makeWeightsAndShift(int featureCount, Mat &weights, float &shift)
 {
+    cout << "makeWeightsAndShift =========" << endl;
     weights.create(1, featureCount, CV_32FC1);
     cv::RNG rng(0);
     double lowerLimit = -1;
